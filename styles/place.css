@@ -1,6 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  /* Colores principales */
+  --primary-color: #245275;        /* Celeste bandera — color principal */
+  --accent: #FFD700;         /* Dorado sol — para botones o elementos destacados */
+
+  /* Fondo y texto */
+  --background: #FFFFFF;     /* Blanco — fondo principal */
+  --text: #003865;           /* Azul fuerte — texto principal (legible y con contraste) */
+  --muted: #E0E0E0;          /* Gris claro — bordes, líneas divisorias, fondos suaves */
+
+  /* Tipografías */
+  --font-heading: 'Bebas Neue', sans-serif;   /* Para títulos */
+  --font-body: 'Roboto', sans-serif;          /* Para párrafos y cuerpo de texto */
+}
+
+/* GENERAL CSS */
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: var(--font-body);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--primary-color);
+}
+
+/* MOBILE VIEW */
+
+h1 {
+    padding: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    background-color: #FFF176;
+    border-bottom: 10px solid var(--accent);
+}
+
 .hero img {
     width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
 }
+
+.data, .weather{
+    text-align: center;
+    padding: 2rem;
+}
+
+.data h2, .weather h2{
+    padding: 1rem;
+    font-size: 2.5rem;
+    border-bottom: 1px solid var(--accent) ;
+}
+
+.data p, .weather p {
+    margin: 1rem;
+}
+
+.weather img {
+    width: 10rem;
+    height: auto;
+}
+
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    background-color: #FFF176;
+    border-bottom: 10px solid var(--accent);
+}
+
+@media screen and (min-width: 600px) {
+    .weather h2::after {
+        content: " ☁️";
+        margin-left: 0.5rem;
+        font-size: 3rem;
+    }
+    .weather img {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .weather h2::after {
+        content: " ☁️";
+        margin-left: 0.5rem;
+        font-size: 3rem;
+    }
+    main {
+        position: relative;
+    }
+    .data, .weather {
+        position: absolute;
+    }
+    .data {
+        top: 1rem;
+        margin: 1rem;
+        background-color: rgba(255, 255, 255, 0.8);
+        max-width: 100%;
+        height: auto;
+    }
+    .weather {
+        right: 1rem;
+        background-color: rgba(255, 255, 255, 0.8);
+        bottom: 1rem;
+    }
+    footer, h1 {
+        padding: 2.2rem 0;
+    }
+}
+
+
+
