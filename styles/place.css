@@ -6,17 +6,16 @@
 
 :root {
   /* Colores principales */
-  --primary-color: #245275;        /* Celeste bandera — color principal */
-  --accent: #FFD700;         /* Dorado sol — para botones o elementos destacados */
+  --primary-color: #245275;      
+  --accent: #FFD700;      
 
   /* Fondo y texto */
-  --background: #FFFFFF;     /* Blanco — fondo principal */
-  --text: #003865;           /* Azul fuerte — texto principal (legible y con contraste) */
-  --muted: #E0E0E0;          /* Gris claro — bordes, líneas divisorias, fondos suaves */
+  --background: #FFFFFF;     
+  --text: #003865;               
 
   /* Tipografías */
-  --font-heading: 'Bebas Neue', sans-serif;   /* Para títulos */
-  --font-body: 'Roboto', sans-serif;          /* Para párrafos y cuerpo de texto */
+  --font-heading: 'Bebas Neue', sans-serif;   
+  --font-body: 'Roboto', sans-serif;         
 }
 
 /* GENERAL CSS */
