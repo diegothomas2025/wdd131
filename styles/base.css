@@ -48,8 +48,16 @@ h1, h2, h3 {
 }
 
 .menu a {
+    font-size: 1.2rem;
+    display: block;
     text-decoration: none;
     color: var(--text-color);
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    transform: scale(1.1);
+    text-decoration: overline;
 }
 
 /* MAIN */
