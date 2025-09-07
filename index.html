@@ -3,10 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Thomas Gomez</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Thomas Gomez - My Home Page Assignment">
+    <meta name="author" content="Thomas Gomez">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/base.css">
+    <!-- SCRIPTS -->
+    <script src="scripts/getdates.js" defer></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>WDD 131 - Thomas Gomez</h1>
-    
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul class="menu">
+                <li><a href="https://www.linkedin.com/in/thomas-gomez2002/">Linkedin</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/10?lang=spa&id=p3#p3">Scripture</a></li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Thomas Gomez</h1>
+        <section class="card ">
+            <h2>About Me</h2>
+            <div class="profile">
+                <p>My name is Thomas, I'm 22 years old, and I was born in Buenos Aires, Argentina, which is a beautiful city. I really enjoy learning new things such as dancing, singing, and sports. I think that’s what led me to learn programming. Currently, I really like frontend development, and I am doing my best to improve my skills.</p>
+                <img src="images/profile.jpg" alt="Author Image">
+            </div>
+            <h3>Argentina</h3>
+            <div class="argentina">
+                <figure>
+                    <img src="images/argentina.webp" alt="Argentina Flag">
+                    <figcaption>Argentina Flag</figcaption> 
+                </figure>
+                <p>Argentina is a country in South America. Its main province is called Buenos Aires. Argentina is known for its rich culture, delicious food like asado and empanadas, passionate soccer, and beautiful landscapes such as Patagonia and Iguazú Falls.</p>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul class="web-resources">
+                <li><a href="https://www.udemy.com/home/my-courses/learning/">Udemy</a></li>
+                <li><a href="https://developer.mozilla.org/es/">MDN</a></li>
+                <li><a href="https://chatgpt.com/c/68bcdb42-6bdc-8331-998b-def47b112c37">Chat GPT</a></li>
+                <li><a href="https://squoosh.app/">Squoosh</a></li>
+                <li><a href="https://www.figma.com/files/team/1518007020828642637/project/404070113/Proyecto-en-equipo?fuid=1518007018238513076">Figma</a></li>
+            </ul>
+        </section>
+        
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span>🐬 Thomas Gomez 🐬 Argentina</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
