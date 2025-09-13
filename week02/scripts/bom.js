@@ -2,11 +2,27 @@ let input = document.querySelector("#favchap");
 let button = document.querySelector("button");
 let list = document.querySelector("#list");
 
-let li = document.createElement("li");
-let deleteButton = document.createElement('button');
+button.addEventListener("click", function () {
+    if (input.value.trim() !== "") {
+        let li = document.createElement("li");
+        let deleteButton = document.createElement('button');
+        li.textContent = input.value;
+        deleteButton.textContent = "❌";
+        li.append(deleteButton);
+        list.append(li);
+        input.focus();
+        input.value = ""
 
-li.textContent = input.value;
-button.textContent = "❌"
+        deleteButton.addEventListener("click", function () {
+            list.removeChild(li);
+            input.focus();
+            input.value = ""
+});
+    } else { 
+        alert("Enter a chapter");
+        input.focus();
+    }
+});
 
-li.append(deleteButton);
-li.append(list);
+
+
