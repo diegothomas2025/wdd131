@@ -90,7 +90,7 @@ footer p {
 }
 
 @media screen and (min-width: 600px) {
-    .weather h2:after {
+    .weather h2::after {
         content:"⛈️";
         font-size: 3rem;
     }
