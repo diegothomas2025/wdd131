@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* COLORS */
+    --primary-color: rgb(6, 2, 44);
+    --secondary-color: rgb(8, 7, 70);
+    --accent: #FFD700;    
+    --text-color: white;
+
+
+    /* FONTS */
+    --highlight: "Pacifico",'Times New Roman', Times, serif;
+    --heading: "Fjalla One",'Times New Roman', Times, serif;
+    --body: "Roboto",'Times New Roman', Times, serif;
+}
+
+/* GENERAL CSS */
+h1, h2, h3 {
+    font-family: var(--heading);
+}
+
+body {
+    font-family: var(--body);
+}
+
+/* HEADER */
+header {
+    padding: 2rem;
+    background-color: var(--primary-color);
+    border-bottom: 1.5rem solid var(--secondary-color);
+}
+
+h1 {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+/* MAIN */
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.data, .weather {
+    margin: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.data h2, .weather h2 {
+    margin: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--accent);
+    font-size: 2rem;
+    color: var(--secondary-color);
+}
+
+.data p, .weather p {
+    color: var(--secondary-color);
+    margin: 1rem;
+}
+
+.rain {
+    width: 6rem;
+    height: auto;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1.5rem solid var(--secondary-color);
+}
+
+footer p {
+    margin: 1rem auto;
+}
+
+#lastModified {
+    color: var(--accent);
+}
+
+@media screen and (min-width: 600px) {
+    .weather h2:after {
+        content:"⛈️";
+        font-size: 3rem;
+    }
+    .rain {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    main {
+        position: relative;
+    }
+    .data, .weather {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    .data {
+        top: 1px;
+    }
+    .weather {
+        bottom: 1px;
+        right: 1px;
+    }
+}
