@@ -1,0 +1,76 @@
+@media screen and (min-width: 800px) {
+    .navigation {
+        background-color: rgb(6, 2, 44);
+        display: flex;  
+    }
+    .navigation a:hover {
+    transform: scale(1.02);
+    background-color: rgb(8, 7, 70);
+    }
+    .navigation li, ul {
+        flex: 1 1 100%;
+    }
+    #menu {
+        display: none;
+    }
+    .navigation li {
+        display: block;
+    }
+    header, footer {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    main {
+        max-width: 800px;
+    }
+    #temple-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    img {
+    max-width: 250px;
+    display: block;
+    margin: 0 auto;
+    }
+    footer {
+        margin: 1rem 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .navigation {
+        background-color: rgb(6, 2, 44);
+        display: flex;  
+    }
+    .navigation a:hover {
+    transform: scale(1.02);
+    background-color: rgb(8, 7, 70);
+    }
+    .navigation li, ul {
+        flex: 1 1 100%;
+    }
+    #menu {
+        display: none;
+    }
+    .navigation li {
+        display: block;
+    }
+    header, footer {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    main {
+        max-width: 1000px;
+    }
+    #temple-cards {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    img {
+    max-width: 240px;
+    display: block;
+    margin: 0 auto;
+    }
+    footer {
+        margin: 1rem 0;
+    }
+}
