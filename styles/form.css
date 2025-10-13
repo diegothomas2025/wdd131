@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* COLORS */
+    --primary-color: rgb(6, 2, 44);
+    --secondary-color: rgb(8, 7, 70);
+    --text-color: white;
+
+
+    /* FONTS */
+    --highlight: "Pacifico",'Times New Roman', Times, serif;
+    --heading: "Fjalla One",'Times New Roman', Times, serif;
+    --body: "Roboto",'Times New Roman', Times, serif;
+}
+
+body {
+    font-family: var(--body);
+    background-color: var(--secondary-color);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading);
+}
+
+.reviewtext{
+    color: var(--text-color);
+    text-align: center;
+    padding: 2rem;
+}
+
+/* HEADER */
+h1 {
+    padding: 1rem;
+    margin: 0 auto;
+    width: 400px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* FORM */
+.wf1 {
+    margin: 1rem auto;
+    border-radius: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.171);
+    padding: 1rem 0;
+    width: 400px;
+    background-color: #ffffffd2;
+}
+
+.wf1 fieldset {
+    border: none;
+    padding: 0.5rem 0.5rem 0.8rem 0.5rem;
+}
+
+.wf1 label, .wf1 legend {
+    font-weight: bolder;
+    font-size: .9rem;
+}
+
+.wf1 strong {
+    color: rgb(124, 7, 7);
+}
+
+.wf1 span {
+    color: rgb(8, 8, 134);
+}
+.wf1 label {
+    display: block;
+    padding-bottom: 0.5rem;
+}
+.wf1 textarea,
+.wf1 input[type="text"],
+.wf1 select,
+.wf1 input[type="date"] {
+    display: block;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+.wf1 textarea {
+    min-height: 100px;
+    max-height: 150px;
+    min-width: 385px;
+    max-width: 385px;
+}
+
+.wf1 input[type="radio"], 
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.wf1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(gold, #474b0a);
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+/* stars */
+input[type="radio"] {
+    display: none;
+    position: relative;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.stars > label {
+    color: gold;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;  
+}
+
+.stars > label:hover {
+    color: #000;
+}
+
+.stars > label::before {
+    content: "\2606";
+    filter: drop-shadow(2px 1px 1px black);
+}
+
+.stars input:checked ~ label::before {
+    content: "\2605";
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    color: var(--text-color);
+    width: 400px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 1rem auto;
+}
+
+#lastModified {
+    color: yellow;
+}
