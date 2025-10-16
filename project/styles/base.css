@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1E3A8A;
+    --secondary-color: #F3F4F6;
+    --text-color: #374151;
+    --accent-color: #F97316;
+
+    --heading-font: "Poppins", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+/* GENERAL CSS */
+h1 {
+    font-family: var(--heading-font);
+}
+
+h2, h3, h4 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* HEADER */
+.title-index {
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-index h1 {
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: left;
+}
+
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+    max-width: 100%;
+}
+
+/* MENU */
+#menu-hamburger::before {
+    content: "≡";
+}
+
+#menu-hamburger {
+	display: block;
+	font-size: 2.5rem;
+	text-decoration: none;
+	padding: 0.5rem 0.75rem;
+    align-self: center;
+    color: #ffff;
+}
+
+.navigation.show li {
+	display: block;
+}
+
+#menu-hamburger.show::before {
+	content: "X";
+}
+
+/* NAVIGATION */
+.navigation {
+    list-style: none;
+    background-color: var(--primary-color);
+}
+
+.navigation a {
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+    color: #ffff;
+    font-weight: 500;
+}
+
+.navigation a:hover {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: var(--accent-color)
+}
+
+.navigation a.active {
+    border-bottom: 3px solid var(--accent-color);
+}
+
+.navigation a:active {
+	background-color: black;
+}
+
+.navigation li {
+    display: none;
+}
+
+/* MAIN INDEX CSS-------------------------------*/
+.presentation {
+    text-align: center;
+}
+
+.presentation img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.presentation h2 {
+    margin: 2.5rem 1rem;
+}
+
+.presentation a, .cta-button {
+    margin: 0 auto;
+    display: block;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: #ffff;
+    font-weight: 500;
+    max-width: 15rem;
+}
+
+.presentation a:hover, .cta-button:hover {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: var(--accent-color);
+}
+
+/* MAIN SERVICES CSS --------------------------*/
+
+.services h2 {
+    margin: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.service-card {
+    margin: 2rem 1rem;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    background-color: #ffff;
+    text-align: center;
+}
+
+.service-card:hover {
+    border: 1px solid var(--primary-color);
+}
+
+.service-card h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.service-card p {
+    font-size: 1.3rem;
+}
+
+.price {
+    margin: 1rem 0;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.price span {
+    color: rgba(0, 0, 0, 0.856);
+}
+
+.service-card img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.cta-button {
+    text-align: center;
+    background-color: var(--primary-color);
+}
+
+/* MAIN ABOUT----------------------------------*/
+.main-container {
+    margin: 1.5rem .5rem;
+}
+
+.main-container h2 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.card h3 {
+    color: #ffff;
+    background-color: var(--primary-color);
+    text-align: center;
+    border-radius: 8px;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.card {
+    border: 2px solid rgba(128, 128, 128, 0.63);
+    border-radius: 10px;
+    margin: 1rem 0;
+    background-color: var(--secondary-color);
+}
+
+/* DIV PROFILE  */
+.profile, .argentina {
+    padding: 1rem;
+}
+
+.profile img, .argentina img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.profile p, .argentina p{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.card h4 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+figcaption {
+    text-align: center;
+}
+
+/* WEB RESOURCES */
+.web-resources {
+    margin: 4rem 2rem;
+}
+
+.web-resources a {
+    color: var(--text-color);
+}
+.web-resources li a:hover {
+    color: var(--accent-color);
+}
+
+.web-resources li {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+/* MAIN CONTACT----------------------------------*/
+.main-container-contact h2 {
+    margin: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.web-form {
+    margin: 1rem auto;
+    padding: 1rem .5rem;
+    box-shadow: 0 2px 6px var(--primary-color);
+    border-radius: 6px;
+    width: 400px;
+}
+
+.web-form fieldset {
+    border: none;
+    padding: 0 0 2rem 0;
+}
+
+.web-form label, .web-form legend {
+    display: block;
+    font-weight: bolder;
+    font-size: .9rem;
+    padding-bottom: 0.5rem;
+}
+
+.red {
+    color: rgb(124, 7, 7);
+}
+
+.optional {
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 380px;
+    resize: vertical;
+    max-height: 200px;
+    min-height: 100px;
+    padding: 0.5rem;
+}
+
+input[type="radio"] {
+    margin-right: .3rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    display: block;
+    padding: .75rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+button {
+    border: none;
+    background-image: linear-gradient(rgb(71, 16, 6), rgb(184, 19, 19));
+    color: #fff;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: 0 2% 1rem 2%;
+    box-shadow: 1px 1px 4px #999;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-image: linear-gradient(rgb(12, 14, 97), var(--primary-color));
+}
+
+#welcome-message {
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 2rem;
+    background-color: var(--primary-color);
+    text-align: center;
+    align-items: center;
+    
+}
+
+.networks {
+    display: flex;
+    justify-content: space-around;
+}
+
+.networks img {
+    width: 2rem;
+    height: auto;
+}
+
+footer p, footer a {
+    padding: 1rem 0;
+    color: #ffff;
+}
+
+@media screen and (min-width: 800px) {
+    /* MAIN INDEX */
+    .navigation {
+        display: flex;
+    }
+    
+    .navigation li, ul {
+        flex: 1 1 100%;
+        display: block;
+    }
+    #menu-hamburger {
+        display: none;
+    }
+    /* MAIN SERVICES */
+    .services {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+    .services h2 {
+        grid-area: 1 / 1 / 2 / 4;
+    }
+    .one {
+        grid-area: 2 / 1 / 3 / 2;
+        max-height: 77%;
+    }
+    .three {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+    .two {
+        grid-area: 2 / 2 / 4 / 3;
+    }
+    .cta-button {
+        grid-area: 4 / 1 / 5 / 4;
+    }
+    /* MAIN ABOUT */
+    .main-container {
+        display: grid;
+        gap: 1rem;
+        max-width: 1150px;
+        grid-template-columns: 3fr 1fr;
+        margin: 0 auto;
+    }
+    .main-container h2 {
+        grid-column: 1/3;
+    }
+    .card h4 {
+        border-bottom: 2px solid lightgray;
+        max-width: 35rem;
+        margin: 0 auto;
+    }
+    .profile, .argentina {
+        display: flex;
+        align-items: center;
+    }
+    .profile img {
+        max-width: 250px;
+        border-radius: 10px;
+    }
+    
+    
+    /* FOOTER */
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 1rem;
+    }
+    .networks {
+        justify-content: right;
+        gap: 1rem;
+}
+}
+
